@@ -1,0 +1,466 @@
+---
+layout: 'base.html'
+description: 'Meta description for the page'
+metaTitle: 'Title that shows up on google searches'
+tagTitle: 'Pixel Perfect Websites'
+preloadLottie: 'https://cdn.prod.website-files.com/682d42bc53d9098749763dd3/682d60e07098c1abdaaad23f_mockup1-lottie.json'
+preloadImg: '/images/landing-1920w.webp'
+preloadCSS: '/css/local.css'
+permalink: '/'
+eleventyNavigation:
+key: Home
+order: 100
+---
+<!-- Enter html code below -->
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section class="scroll-section">
+	<div class="laptop-topper">
+		<p>our work in motion</p>
+		<img class="arrow-svg" height="500px" src="./images/file.svg" />
+	</div>
+	<!-- 
+      <div class="bg-element1">
+        <h2 class="bg-text1">Design that moves</h2>
+        <div class="bg-blur1"></div>
+      </div> -->
+	<div class="sticky-wrapper" id="sticky-wrapper">
+
+		<div id="lottie-scroll-animation" data-preserve-aspect-ratio="xMidYMid slice"></div>
+		<video class="laptop-video" src="./images/your-video.mp4" autoplay muted loop playsinline></video>
+	</div>
+</section>
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-2410">
+	<div class="cs-container">
+		<div class="cs-content">
+			<span class="cs-topper">Helping You Grow Online</span>
+			<h1 class="cs-title">Turn More Visitors into Paying Clients</h1>
+			<p class="cs-text">
+				Our websites are designed to bring you leads — not just look good. Fast, functional, and affordable for
+				hard-working businesses.
+			</p>
+			<a href="" class="cs-button-solid">Get a Website That Delivers</a>
+		</div>
+		<!--Hero Image-->
+		<div class="cs-image-group">
+			<!-- IF you have a wide image that gets cut off on the right, go the the cs-picture img and set the left value to a negative number till its where you like it in frame-->
+			<picture class="cs-picture">
+				<!--Mobile Image-->
+				<source media="(max-width: 600px)"
+					srcset="/images/laptopimg1.png">
+				<!--Tablet and above Image-->
+				<source media="(min-width: 601px)"
+					srcset="/images/laptopimg1.png">
+				<img decoding="async" fetchpriority="high"
+					src="/images/laptopimg1.png" alt="dog" width="635"
+					height="836">
+			</picture>
+			<!--Circle Background-->
+			<!--Download the SVG from the CDN by copy ad pasting its link into your browser and saving it. Then the cs-circle fill property should override it and set it to the primary color of your site-->
+			<img class="cs-circle" decoding="async" fetchpriority="high"
+				src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/noise-bg.svg" alt="graphic"
+				width="758" height="758">
+
+			<!--Arrow Box-->
+			<img class="cs-arrow" decoding="async" fetchpriority="high"
+				src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/black-squiggle-arrow.svg" alt="icon"
+				width="76" height="162">
+
+			<!--Steaming pile-->
+			<img class="cs-no-no" decoding="async" fetchpriority="high"
+				src="/images/phone1.png" alt="icon"
+				width="48" height="48">
+		</div>
+	</div>
+	<!--White curve-->
+	<svg class="cs-wave" width="1920" height="167" viewBox="0 0 1920 167" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<path d="M1920 167H0V0C111.116 45.3334 456.485 136 951 136C1445.52 136 1803.21 45.3334 1920 0V167Z"
+			fill="white" />
+	</svg>
+</section>
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="why-1166">
+	<div class="cs-container">
+		<div class="cs-image-group">
+			<!--Stat Group-->
+			<div class="cs-stat">
+				<picture class="cs-icon-wrapper">
+					<img class="cs-icon" loading="lazy" decoding="async"
+						src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/why-icon.svg" alt="icon"
+						width="48" height="48" aria-hidden="true">
+				</picture>
+				<div class="cs-flex">
+					<span class="cs-number">100%</span>
+					<span class="cs-desc">Customer Satisfaction</span>
+				</div>
+			</div>
+
+			<!--Car-->
+			<picture class="cs-picture cs-picture1">
+				<!--Mobile Image-->
+				<source media="(max-width: 600px)"
+					srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/car.png">
+				<!--Tablet and above Image-->
+				<source media="(min-width: 601px)"
+					srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/car.png">
+				<img loading="lazy" decoding="async"
+					src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/car.png" alt="appliance" width="858"
+					height="477">
+			</picture>
+
+			<!--Person, to make your own crop of a person, use https://www.remove.bg/ to remove the background of any image -->
+			<picture class="cs-picture cs-picture2">
+				<!--Mobile Image-->
+				<source media="(max-width: 600px)"
+					srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic27.png">
+				<!--Tablet and above Image-->
+				<source media="(min-width: 601px)"
+					srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic27.png">
+				<img loading="lazy" decoding="async"
+					src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic27.png" alt="appliance"
+					width="438" height="588">
+			</picture>
+
+			<!--Stripe background-->
+			<div class="cs-graphic-wrapper">
+				<img class="cs-graphic" loading="lazy" decoding="async"
+					src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/tire-mark.svg" alt="tire mark"
+					width="1469" height="626" aria-hidden="true">
+			</div>
+
+		</div>
+		<div class="cs-content">
+			<span class="cs-topper">About Us</span>
+			<h2 class="cs-title">Why Choose Us</h2>
+			<p class="cs-text">
+				We’re not just building websites—we’re building your business.
+From strategy to design to launch, we make it easy to get online and get results.
+Fast, functional, and focused on getting you more leads.
+
+
+			</p>
+			<ul class="cs-list">
+				<li class="cs-li">
+					<picture class="cs-li-picture">
+						<img class="cs-li-icon" aria-hidden="true"
+							src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/247.svg" decoding="async"
+							alt="icon" width="32" height="32" loading="lazy">
+					</picture>
+					<div class="cs-flex">
+						<h3 class="cs-h3">We Get You Found
+
+</h3>
+						<p class="cs-li-text">
+							Our SEO strategies are built to boost your visibility and bring the right people to your website—organically, consistently, and affordably.
+
+
+						</p>
+					</div>
+				</li>
+				<li class="cs-li">
+					<picture class="cs-li-picture">
+						<img class="cs-li-icon" aria-hidden="true"
+							src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/members.svg"
+							decoding="async" alt="icon" width="32" height="32" loading="lazy">
+					</picture>
+					<div class="cs-flex">
+						<h3 class="cs-h3">Human Support, Always
+</h3>
+						<p class="cs-li-text">
+							You’ll work directly with real people who care about your success. No bots. No ticket systems. Just friendly, expert help when you need it.
+
+
+						</p>
+					</div>
+				</li>
+				<li class="cs-li">
+					<picture class="cs-li-picture">
+						<img class="cs-li-icon" aria-hidden="true"
+							src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/clock-zoom.svg"
+							decoding="async" alt="icon" width="32" height="32" loading="lazy">
+					</picture>
+					<div class="cs-flex">
+						<h3 class="cs-h3">Fast, Affordable & Reliable
+</h3>
+						<p class="cs-li-text">
+							We build sleek, mobile-optimized websites at prices that make sense—without cutting corners.
+
+
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Pricing                    -->
+<!-- ============================================ -->
+
+<section id="pricing-2421">
+	<div class="cs-container">
+		<div class="cs-content">
+			<span class="cs-topper">Clear, Simple Pricing</span>
+			<h2 class="cs-title">Affordable Plans for Every Yard</h2>
+			<p class="cs-text">We believe in transparent, fair pricing with no hidden fees. Choose the plan that suits
+				your needs whether it’s a one-time cleanup or ongoing service for spotless results.</p>
+		</div>
+		<div class="cs-wrapper">
+			<div class="cs-button-group">
+				<button class="cs-button" data-filter="one">
+					<picture class="cs-check-wrapper">
+						<img class="cs-check"
+							src="https://nyc3.digitaloceanspaces.com/csimages2/Images/Icons/white-check.svg" alt="check"
+							height="24" width="24" loading="lazy" decoding="async" a ria-hidden="true" />
+					</picture>
+					<div class="cs-flex">
+						<span class="cs-discount">10% Off</span>
+						<span class="cs-plan">Starter Plan
+</span>
+					</div>
+					<span class="cs-price">
+						$99
+						<span class="cs-price-small">/Month</span>
+					</span>
+				</button>
+				<button class="cs-button" data-filter="two">
+					<picture class="cs-check-wrapper">
+						<img class="cs-check"
+							src="https://nyc3.digitaloceanspaces.com/csimages2/Images/Icons/white-check.svg" alt="check"
+							height="24" width="24" loading="lazy" decoding="async" a ria-hidden="true" />
+					</picture>
+					<div class="cs-flex">
+						<span class="cs-discount">20% Off</span>
+						<span class="cs-plan">Growth Plan</span>
+					</div>
+					<span class="cs-price">
+						$249
+						<span class="cs-price-small">/Month</span>
+					</span>
+				</button>
+				<button class="cs-button" data-filter="three">
+					<picture class="cs-check-wrapper">
+						<img class="cs-check"
+							src="https://nyc3.digitaloceanspaces.com/csimages2/Images/Icons/white-check.svg" alt="check"
+							height="24" width="24" loading="lazy" decoding="async" aria-hidden="true" />
+					</picture>
+					<div class="cs-flex">
+						<span class="cs-discount">30% Off</span>
+						<span class="cs-plan">One Time Plan</span>
+					</div>
+					<span class="cs-price">
+						$1500
+						<span class="cs-price-small"></span>
+					</span>
+				</button>
+			</div>
+			<!--Card 1-->
+			<div class="cs-card" data-category="one">
+				<span class="cs-package">Package Includes:</span>
+				<ul class="cs-ul">
+					<li class="cs-li">
+						<img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+							src="https://nyc3.digitaloceanspaces.com/csimages2/Images/Icons/white-check.svg"
+							alt="checkmark" width="16" height="16" />
+						Mobile-Optimized Website
+
+
+					</li>
+					<li class="cs-li">
+						<img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+							src="https://nyc3.digitaloceanspaces.com/csimages2/Images/Icons/white-check.svg"
+							alt="checkmark" width="16" height="16" />
+						Basic SEO Setup
+
+.
+					</li>
+					<li class="cs-li">
+						<img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+							src="https://nyc3.digitaloceanspaces.com/csimages2/Images/Icons/white-check.svg"
+							alt="checkmark" width="16" height="16" />
+						Fast & secure hosting included
+
+
+					</li>
+					<li class="cs-li">
+						<img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+							src="https://nyc3.digitaloceanspaces.com/csimages2/Images/Icons/white-check.svg"
+							alt="checkmark" width="16" height="16" />
+						SSL certificate for trust & security
+
+
+					</li>
+					<li class="cs-li cs-disabled">
+						<img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+							src="https://nyc3.digitaloceanspaces.com/csimages2/Images/Icons/white-check.svg"
+							alt="checkmark" width="16" height="16" />
+						Up to 2 content revisions
+					</li>
+					<li class="cs-li cs-disabled">
+						<img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+							src="https://nyc3.digitaloceanspaces.com/csimages2/Images/Icons/white-check.svg"
+							alt="checkmark" width="16" height="16" />
+						Email support (24–48 hour response time)
+
+
+					</li>
+				</ul>
+				<a href="" class="cs-button-solid">Choose Your Plan</a>
+			</div>
+			<!--Card 2-->
+			<div class="cs-card cs-hidden" data-category="two">
+				<span class="cs-package">Package Includes:</span>
+				<ul class="cs-ul">
+					<li class="cs-li">
+						<img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+							src="https://nyc3.digitaloceanspaces.com/csimages2/Images/Icons/white-check.svg"
+							alt="checkmark" width="16" height="16" />
+						 Up to 5 fully custom pages
+					</li>
+					<li class="cs-li">
+						<img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+							src="https://nyc3.digitaloceanspaces.com/csimages2/Images/Icons/white-check.svg"
+							alt="checkmark" width="16" height="16" />
+						Contact forms with email automation
+					</li>
+					<li class="cs-li">
+						<img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+							src="https://nyc3.digitaloceanspaces.com/csimages2/Images/Icons/white-check.svg"
+							alt="checkmark" width="16" height="16" />
+						Blog setup for content marketing
+
+
+					</li>
+					<li class="cs-li">
+						<img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+							src="https://nyc3.digitaloceanspaces.com/csimages2/Images/Icons/white-check.svg"
+							alt="checkmark" width="16" height="16" />
+						Advanced on-page SEO setup
+
+
+					</li>
+					<li class="cs-li">
+						<img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+							src="https://nyc3.digitaloceanspaces.com/csimages2/Images/Icons/white-check.svg"
+							alt="checkmark" width="16" height="16" />
+						Monthly site performance reports
+
+
+					</li>
+					<li class="cs-li cs-disabled">
+						<img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+							src="https://nyc3.digitaloceanspaces.com/csimages2/Images/Icons/white-check.svg"
+							alt="checkmark" width="16" height="16" />
+						Priority email support
+					</li>
+					<li class="cs-li cs-disabled">
+						<img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+							src="https://nyc3.digitaloceanspaces.com/csimages2/Images/Icons/white-check.svg"
+							alt="checkmark" width="16" height="16" />
+						Pay easily with secure online payments.
+					</li>
+				</ul>
+				<a href="" class="cs-button-solid">Choose Your Plan</a>
+			</div>
+			<!--Card 3-->
+			<div class="cs-card cs-hidden" data-category="three">
+				<span class="cs-package">Package Includes:</span>
+				<ul class="cs-ul">
+					<li class="cs-li">
+						<img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+							src="https://nyc3.digitaloceanspaces.com/csimages2/Images/Icons/white-check.svg"
+							alt="checkmark" width="16" height="16" />
+						Unlimited custom pages & sections
+					</li>
+					<li class="cs-li">
+						<img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+							src="https://nyc3.digitaloceanspaces.com/csimages2/Images/Icons/white-check.svg"
+							alt="checkmark" width="16" height="16" />
+						Full UX/UI strategy & wireframes
+					</li>
+					<li class="cs-li">
+						<img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+							src="https://nyc3.digitaloceanspaces.com/csimages2/Images/Icons/white-check.svg"
+							alt="checkmark" width="16" height="16" />
+						One-time or recurring visits available.
+					</li>
+					<li class="cs-li">
+						<img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+							src="https://nyc3.digitaloceanspaces.com/csimages2/Images/Icons/white-check.svg"
+							alt="checkmark" width="16" height="16" />
+						Custom dashboards or web apps
+
+
+					</li>
+					<li class="cs-li">
+						<img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+							src="https://nyc3.digitaloceanspaces.com/csimages2/Images/Icons/white-check.svg"
+							alt="checkmark" width="16" height="16" />
+						 E-commerce or membership site capabilities
+					</li>
+					<li class="cs-li">
+						<img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+							src="https://nyc3.digitaloceanspaces.com/csimages2/Images/Icons/white-check.svg"
+							alt="checkmark" width="16" height="16" />
+						Dedicated account manager
+
+
+					</li>
+					<li class="cs-li">
+						<img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+							src="https://nyc3.digitaloceanspaces.com/csimages2/Images/Icons/white-check.svg"
+							alt="checkmark" width="16" height="16" />
+						Ongoing A/B testing and CRO
+
+
+					</li>
+				</ul>
+				<a href="" class="cs-button-solid">Choose Your Plan</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- ============================================ -->
+<!--                     CTA                      -->
+<!-- ============================================ -->
+
+<section id="cta-1692">
+	<div class="cs-container">
+		<div class="cs-content">
+			<span class="cs-topper">Let’s Talk
+
+			</span>
+			<h2 class="cs-title">Talk to a Web Design Expert
+
+			</h2>
+			<p class="cs-text">
+				Have questions or want to get started? Click below to reach out — we’ll get back to you fast.
+
+
+			</p>
+
+			<button class="cs-button-solid cs-submit" type="submit">Contact Us
+
+			</button>
+		</div>
+	</div>
+	<img class="cs-graphic cs-graphic-1"
+		src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/pill-pattern.svg" alt="pills" height="196"
+		width="582" loading="lazy" decoding="async">
+	<img class="cs-graphic cs-graphic-2"
+		src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/pill-pattern.svg" alt="pills" height="196"
+		width="582" loading="lazy" decoding="async">
+</section>
