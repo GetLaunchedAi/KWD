@@ -746,8 +746,8 @@
   #footer .left-section .logo {
     display: inline-block;
     margin: auto;
-    width: auto;
-    height: 3.125em;
+    /* width: auto; */
+    height: 6em;
     margin-bottom: 1.875em;
     text-align: center;
   }
@@ -773,7 +773,7 @@
   }
   #footer .right-section .lists {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     width: 96%;
     max-width: 19.1875rem;
