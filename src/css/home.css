@@ -42,7 +42,6 @@
 
 .laptop-topper {
   position: absolute;
-  color:black;
   height: 30%;
   width: 20%;
   top: 40%;
@@ -52,6 +51,7 @@
 
 .laptop-topper p {
   font-size: 2rem;
+  color:black;
 
 }
 .arrow-svg {
