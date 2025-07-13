@@ -4,9 +4,9 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
   :root {
-    --primary: #2e7d32 ;
-    --primaryShade: #66bb6a;
-    --primaryDark: #1b5e20;
+    --primary: #145da0 ;
+    --primaryShade: #b1d4e0;
+    --primaryDark: #0e3f6f;
     --bodyTextColor: #4E4B66;
     --bodyTextColorWhite: #FAFBFC;
     --headerColor: #1a1a1a;

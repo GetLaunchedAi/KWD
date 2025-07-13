@@ -1,3 +1,9 @@
+document.addEventListener('DOMContentLoaded', () => {
+  if (!sessionStorage.getItem('pageReloaded')) {
+    sessionStorage.setItem('pageReloaded', 'true');
+    location.reload();
+  }
+});
 
 const mainAnimation = lottie.loadAnimation({
   container: document.getElementById('lottie-scroll-animation'),
