@@ -1,10 +1,13 @@
-const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
-        for (const item of faqItems) {
-            const onClick = () => {
-            item.classList.toggle('active')
-        }
-        item.addEventListener('click', onClick)
-        }
+  const mainAnimation = lottie.loadAnimation({
+  container: document.getElementById('lottie-scroll-animation'),
+  renderer: 'svg',
+  loop: false,
+  autoplay: false,
+  path: 'https://cdn.prod.website-files.com/682d42bc53d9098749763dd3/682d60e07098c1abdaaad23f_mockup1-lottie.json'
+});
+
+
+
                                 
 document.addEventListener('DOMContentLoaded', () => {
   if (!sessionStorage.getItem('pageReloaded')) {
@@ -29,17 +32,28 @@ const video = document.querySelector('.laptop-video');
       });
     }
 
+    emailjs.init("jugA-7i7zk2cWvmdP"); // from EmailJS dashboard
+    if(document.getElementById('cs-form-1403')) {
+        document.getElementById('cs-form-1403').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_4jp4woo', 'template_j1mt7rh', this)
+      .then(() => alert('Email sent!'))
+      .catch(error => alert('Failed to send email: ' + error));
+  });
+
+    }
+
+
 });
 
-const mainAnimation = lottie.loadAnimation({
-  container: document.getElementById('lottie-scroll-animation'),
-  renderer: 'svg',
-  loop: false,
-  autoplay: false,
-  path: 'https://cdn.prod.website-files.com/682d42bc53d9098749763dd3/682d60e07098c1abdaaad23f_mockup1-lottie.json'
-});
-
-
+const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+        for (const item of faqItems) {
+            const onClick = () => {
+            item.classList.toggle('active')
+        }
+        item.addEventListener('click', onClick)
+        }
 
 const scrollSection = document.querySelector('.scroll-section');
 const stickyWrapper = document.getElementById('sticky-wrapper');
@@ -63,7 +77,7 @@ window.addEventListener('scroll', () => {
   // Animate the Lottie frame
   let frame = (easedProgress * mainAnimation.totalFrames) + 20;
 
-  console.log(easedProgress, mainAnimation.totalFrames, easedProgress * mainAnimation.totalFrames)
+  // console.log(easedProgress, mainAnimation.totalFrames, easedProgress * mainAnimation.totalFrames)
   if(frame < 133) {
     mainAnimation.goToAndStop(frame - 0.1, true);
   } else {
