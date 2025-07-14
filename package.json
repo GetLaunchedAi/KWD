@@ -1,7 +1,7 @@
 {
   "name": "starter-kit-v4",
   "version": "1.0.0",
-  "description": "",
+  "description": "- [Overview](#overview)\r - [Features](#features)\r - [File Structure](#file-structure)\r - [How it Works](#how-it-works)\r - [Using the Kit](#using-the-kit)\r - [Converting a Static Site](#converting-a-static-site)\r - [Blog](#blog)\r - [Things to do before deployment](#pre-deployment-things)",
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve",

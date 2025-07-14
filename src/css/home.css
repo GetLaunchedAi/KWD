@@ -1,4 +1,3 @@
-
 @media only screen and (min-width: 0rem) {
 .scroll-section {
   height: 400vh;
@@ -35,7 +34,109 @@
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-  outline: 2px solid green;
+  /* outline: 2px solid green; */
+  z-index: 20;
+
+}
+
+.laptop-topper {
+  position: absolute;
+  height: 30%;
+  width: 40%;
+  top: 20%;
+  left:10%;
+  z-index: 25;
+}
+
+.laptop-topper p {
+  font-size: 2rem;
+  color:black;
+
+}
+.arrow-svg {
+  position: absolute;
+  height: 8rem;
+  left:5%;
+
+}
+
+.bg-element1 {
+  position: absolute;
+  top:40rem;
+  left:10%;
+  z-index:0;
+}
+
+.bg-text1 {
+  font-size: 6rem;
+}
+
+.bg-blur1 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, #ff6ec4, #7873f5);
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.info-section {
+    padding-right: 10rem;
+    padding-left: 10rem;
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    grid-template-rows: auto auto;
+}
+
+.info-section h2 {
+    color:black;
+}
+
+.info-section h2 {
+    color:black;
+}
+.box1 {
+    height: 50vh;
+    background-color: black;
+} 
+
+}
+@media only screen and (min-width: 48rem) {
+.scroll-section {
+  height: 400vh;
+  width:100vw;
+  /* outline: 2px solid blue; */
+}
+
+.sticky-wrapper {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f8f8;
+  transition: all 0.3s ease;
+  /* outline: 2px solid yellow; */
+
+}
+
+#lottie-scroll-animation{
+  position: absolute;
+  width: 60vw;
+  /* outline: 2px solid red; */
+  anchor-name: --laptop;
+}
+
+.laptop-video {
+  position: absolute;
+  position-anchor: --laptop;
+  width: 50%;
+  border-radius: 4px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  /* outline: 2px solid green; */
   z-index: 20;
 
 }
