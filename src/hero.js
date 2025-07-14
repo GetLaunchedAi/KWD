@@ -1,3 +1,11 @@
+const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+        for (const item of faqItems) {
+            const onClick = () => {
+            item.classList.toggle('active')
+        }
+        item.addEventListener('click', onClick)
+        }
+                                
 document.addEventListener('DOMContentLoaded', () => {
   if (!sessionStorage.getItem('pageReloaded')) {
     sessionStorage.setItem('pageReloaded', 'true');
