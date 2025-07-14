@@ -3,14 +3,24 @@ document.addEventListener('DOMContentLoaded', () => {
     sessionStorage.setItem('pageReloaded', 'true');
     location.reload();
   }
-    const video = document.querySelector('.laptop-video');
+const video = document.querySelector('.laptop-video');
 
     if (video) {
-      // Try to play the video
-      const playPromise = video.play();
+      video.muted = true; // Safari sometimes needs this set via JS too
+      video.setAttribute('playsinline', ''); // Enforce playsinline
+      video.play().catch((error) => {
+        console.warn('Autoplay blocked:', error);
 
-      if(playPromise !== undefined) {
-        video.play()}}
+        // Optional: Retry on user interaction as fallback
+        const retryPlay = () => {
+          video.play().catch(err => console.error('Manual play failed:', err));
+          document.removeEventListener('click', retryPlay);
+        };
+
+        document.addEventListener('click', retryPlay);
+      });
+    }
+
 });
 
 const mainAnimation = lottie.loadAnimation({
