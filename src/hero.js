@@ -63,7 +63,19 @@ window.addEventListener('scroll', () => {
 
 });
 
+// Autoplay youtube video
 
+ document.addEventListener('DOMContentLoaded', function () {
+    const video = document.querySelector('.laptop-video');
+
+    if (video) {
+      // Try to play the video
+      const playPromise = video.play();
+
+      if(playPromise !== undefined) {
+        playPromise
+      }
+    }})
 
 class CS_GalleryFilter {
 	filtersSelector = ".cs-button";
