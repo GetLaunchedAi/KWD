@@ -3,6 +3,14 @@ document.addEventListener('DOMContentLoaded', () => {
     sessionStorage.setItem('pageReloaded', 'true');
     location.reload();
   }
+    const video = document.querySelector('.laptop-video');
+
+    if (video) {
+      // Try to play the video
+      const playPromise = video.play();
+
+      if(playPromise !== undefined) {
+        video.play()}}
 });
 
 const mainAnimation = lottie.loadAnimation({
@@ -64,18 +72,6 @@ window.addEventListener('scroll', () => {
 });
 
 // Autoplay youtube video
-
- document.addEventListener('DOMContentLoaded', function () {
-    const video = document.querySelector('.laptop-video');
-
-    if (video) {
-      // Try to play the video
-      const playPromise = video.play();
-
-      if(playPromise !== undefined) {
-        playPromise
-      }
-    }})
 
 class CS_GalleryFilter {
 	filtersSelector = ".cs-button";
