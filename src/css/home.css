@@ -2,7 +2,10 @@
 .scroll-section {
   height: 400vh;
   width:100vw;
+  border: orange;
   /* outline: 2px solid blue; */
+
+
 
 }
 
@@ -86,6 +89,7 @@
     display: grid;
     grid-template-columns: 1.25fr 0.75fr;
     grid-template-rows: auto auto;
+    
 }
 
 .info-section h2 {
@@ -216,6 +220,8 @@
     overflow: hidden;
     position: relative;
     z-index: 1;
+  border: green;
+
   }
   #hero-2410:before {
     /* background color */

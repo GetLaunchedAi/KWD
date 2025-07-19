@@ -48,11 +48,15 @@
   html {
     margin: 0;
     padding: 0;
+    width:100vw;
     font-size: 100%;
     font-family: 'Roboto', Arial, sans-serif;
     color: var(--bodyTextColor);
-    /* overflow-x: hidden; */
+    /* background-color: orange; */
+          overflow-x: clip;
+      overflow-y: visible;
   }
+
 
   .container {
     position: relative;
