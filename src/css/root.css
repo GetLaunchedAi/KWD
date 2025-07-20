@@ -53,8 +53,8 @@
     font-family: 'Roboto', Arial, sans-serif;
     color: var(--bodyTextColor);
     /* background-color: orange; */
-          overflow-x: clip;
-      overflow-y: visible;
+    overflow-x: clip;
+    overflow-y: visible;
   }
 
 
