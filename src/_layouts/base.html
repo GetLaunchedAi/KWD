@@ -29,11 +29,10 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- Preload -->
-{% if preloadLottie %}
-  <link rel="preload" href="{{ preloadLottie }}" as="fetch" type="application/json" crossorigin="anonymous">
-{% endif %}
-
-    <link rel="preload" as="image" href="/assets/logo-light.png">
+    {% if preloadLottie %}
+    <link rel="preload" href="{{ preloadLottie }}" as="fetch" type="application/json" crossorigin="anonymous">
+    {% endif %}
+    
     <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
     <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
 
@@ -41,6 +40,9 @@
     <link rel="stylesheet" href="/css/dark.css">
 
     <link rel="preload" as="image" href="{{ preloadImg }}" />
+    {% if preloadVideo %}
+    <link rel="preload" as="video" href="{{ preloadVideo }}" type="video/mp4" />
+    {% endif %}
 
     <!-- Loading in page specific CSS sheets from css block -->
     <link rel="stylesheet" href="/css/critical.css" />
@@ -67,10 +69,10 @@
     <main id="main">{{ content | safe }}</main>
     {% include "footer.html" %}
 
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script defer src="/assets/js/nav.js"></script>
     <!-- <script defer src="/assets/js/dark.js"></script> -->
-  <script defer src="https://unpkg.com/lottie-web@5.7.4/build/player/lottie.min.js"></script>
+    <script defer src="https://unpkg.com/lottie-web@5.7.4/build/player/lottie.min.js"></script>
     <script defer src="/hero.js"></script>
 
 
