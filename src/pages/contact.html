@@ -7,8 +7,8 @@ preloadImg: '/images/cabinets2-1920w.webp'
 preloadCSS: '/css/contact.css'
 permalink: 'contact/'
 eleventyNavigation:
-  key: Contact
-  order: 600
+key: Contact
+order: 600
 ---
 
 <!-- Enter html code below -->
@@ -78,8 +78,8 @@ eleventyNavigation:
               alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
           </picture>
           <div class="cs-flex-group">
-            <span class="cs-header">Address</span>
-            <a href="" class="cs-link">2553 Woodbridge Lane, Boston Ware 120</a>
+            <span class="cs-header">Location</span>
+            <a href="" class="cs-link">Kalamazoo, Mi</a>
           </div>
         </li>
       </ul>
@@ -98,13 +98,37 @@ eleventyNavigation:
       <label class="cs-label cs-phone">
         Phone
         <input class="cs-input" required type="number" id="phone-1403" name="phone" placeholder="Phone">
-      </label>
-      <label class="cs-label">
-        Message
-        <textarea class="cs-input cs-textarea" required name="Message" id="message-1403"
-          placeholder="Write message..."></textarea>
-      </label>
-      <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
+        <label class="cs-label cs-plan">
+          What Plan Are You Interested In?
+        </label>
+
+        <div class="cs-input-group">
+          <label class="plan-option">
+            <input type="radio" name="plan" value="Basic" required>
+            Starter Plan($99)
+          </label>
+          <label class="plan-option">
+            <input type="radio" name="plan" value="Standard">
+            Growth Plan($249)
+          </label>
+          <label class="plan-option">
+            <input type="radio" name="plan" value="Premium">
+            One Time Plan($1500)
+          </label>
+          <label class="plan-option">
+            <input type="radio" name="plan" value="Premium">
+            Not Sure Yet
+          </label>
+        </div>
+
+
+
+        <label class="cs-label">
+          Message
+          <textarea class="cs-input cs-textarea" required name="Message" id="message-1403"
+            placeholder="Write message..."></textarea>
+        </label>
+        <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
     </form>
   </div>
 </section>
@@ -133,7 +157,7 @@ eleventyNavigation:
               </span>
             </button>
             <p class="cs-item-p">
-              We offer professional website design, responsive development, SEO optimization, content creation, and
+              We offer professional web design, responsive development, SEO optimization, content creation, and
               ongoing maintenance. Our team specializes in creating fast, user-friendly websites that help small
               businesses grow online and generate more leads.
 
@@ -194,7 +218,8 @@ eleventyNavigation:
               up. We make sure your website looks great and functions seamlessly on all screen sizes—desktops, tablets,
               and smartphones. On the SEO side, we implement technical best practices like fast load times, clean code,
               alt text, semantic HTML, proper heading structure, and keyword-friendly content. These foundational
-              elements help Google understand and rank your site more effectively, giving you a strong start in organic
+              elements help Google understand and rank your site more effectively on the web, giving you a strong start
+              in organic
               search.
 
 
@@ -215,7 +240,8 @@ eleventyNavigation:
               rankings and help you get found by your ideal customers. This includes on-page optimization, keyword
               targeting, speed optimization, image compression, meta tags, and more. We can also help with local SEO,
               backlink strategies, and regular performance reporting. If you want your website to be more than just a
-              digital brochure, our SEO-driven approach ensures it performs like a marketing asset.
+              digital brochure, our SEO-driven approach ensures it performs like a marketing asset. In today's age a web
+              presence is critical to getting the most out of your business.
 
 
             </p>
@@ -225,14 +251,10 @@ eleventyNavigation:
     </div>
     <picture class="cs-picture">
       <!--Mobile Image-->
-      <source media="(max-width: 600px)"
-        srcset="/images/FAQimg.png">
+      <source media="(max-width: 600px)" srcset="/images/FAQimg.png">
       <!--Tablet and above Image-->
-      <source media="(min-width: 601px)"
-        srcset="/images/FAQimg.png">
-      <img loading="lazy" decoding="async"
-        src="/images/FAQimg.png" alt="building" width="606"
-        height="473">
+      <source media="(min-width: 601px)" srcset="/images/FAQimg.png">
+      <img loading="lazy" decoding="async" src="/images/FAQimg.png" alt="building" width="606" height="473">
     </picture>
   </div>
 </section>
